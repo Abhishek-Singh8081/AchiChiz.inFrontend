@@ -1,0 +1,51 @@
+@import "tailwindcss";
+/* Hide scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out both;
+}
+.animate-slide-in {
+  animation: slide-in 1s ease-out both;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+
+
+
+/* Fix for mobile viewport height */
+:root {
+  --vh: 100%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --vh: 100vh;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.full-screen-mobile {
+  height: calc(var(--vh, 100vh));
+}
