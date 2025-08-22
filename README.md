@@ -147,5 +147,5 @@ The goal is to offer a fully customizable, fast, and modern shopping experience 
 ### 📥 Clone Repository
 
 ```bash
-git clone 
+git clone https://github.com/Abhishek-Singh8081/AchiChiz.inFrontend.git
 cd handicraft-ecommerce-platform
